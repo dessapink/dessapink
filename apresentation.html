@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,11 +13,14 @@
             height: 100%;
         }
 
-        /* Estilo para o iframe ocupar a página inteira */
+        /* Ajustes para o iframe */
         iframe {
             border: none; /* Remove a borda padrão */
-            width: 100%;  /* Ocupa 100% da largura */
-            height: 100%; /* Ocupa 100% da altura */
+            width: 100vw; /* Garante 100% da largura da viewport */
+            height: 100vh; /* Garante 100% da altura da viewport */
+            display: block; /* Remove possíveis espaços em branco */
+            margin: 0; /* Remove qualquer margem residual */
+            padding: 0; /* Remove qualquer preenchimento residual */
         }
     </style>
 </head>
